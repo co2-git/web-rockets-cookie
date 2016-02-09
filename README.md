@@ -15,7 +15,7 @@ npm install -s web-rockets-cookie
 identifyByCookie(String cookieName, Boolean secureCookie, Function next);
 ```
 
-# With SocketIO
+## With SocketIO
 
 ```js
 import SocketIO from 'socket.io';
@@ -35,7 +35,7 @@ io.use(identifyByCookie(
 }));
 ```
 
-# With Web-Rockets
+## With Web-Rockets
 
 ```js
 import WebRockets from 'web-rockets';
