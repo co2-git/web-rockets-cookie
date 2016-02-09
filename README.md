@@ -34,3 +34,13 @@ io.use(identifyByCookie(
   // next goes to next middleware
 }));
 ```
+
+# With Web-Rockets
+
+```js
+import WebRockets from 'web-rockets';
+import identifyByCookie from 'web-rockets-cookie';
+
+new WebRockets()
+  .use(identifyByCookie(cookieName, true, (cookie, socket, next) => {}));
+```
