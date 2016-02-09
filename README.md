@@ -1,7 +1,7 @@
 web-rockets-cookie
 ===
 
-Use HTTP(s) cookies to identify users using socket.io.
+Use HTTP(s) cookies to identify your socket.io clients.
 
 # Install
 
