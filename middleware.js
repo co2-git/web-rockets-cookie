@@ -19,7 +19,7 @@ function identifyByCookie(cookieName, secure, cb) {
         return next()
       }
 
-      cb(JSON.parse(cookies[cookieName]), socket, next);
+      cb(cookies[cookieName], socket, next);
     }
     catch ( error ) {
       next(error);
