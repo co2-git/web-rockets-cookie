@@ -15,10 +15,6 @@ function identifyByCookie(cookieName, secure, cb) {
 
       const cookies = req[secure ? 'signedCookies' : 'cookies'];
 
-      if ( ! ( cookieName in cookies ) ) {
-        return next()
-      }
-
       cb(cookies[cookieName], socket, next);
     }
     catch ( error ) {
